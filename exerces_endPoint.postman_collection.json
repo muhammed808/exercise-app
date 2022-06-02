@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "93776d91-d36e-4c42-81e5-1011bf6ae02b",
+		"name": "exerces_endPoint",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17353421"
+	},
+	"item": [
+		{
+			"name": "task1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "exercises1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "hours",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "mins",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/regester_my_exercises",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"regester_my_exercises"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "YwjyRaLxOLt4rhMplnqRRgjE7BXuxnjaQPlJOWc0XoprctYhDkubpljqggELJFysvPx9DaOeg2PxyzvkgX2noVBhKaRDL8cgbOPsXngB7Yhpadq9VLMm4SNCB3GL3MD8RLzqFk0BbKLv7QqbkDJqfY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/my_days",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"my_days"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "task3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "YwjyRaLxOLt4rhMplnqRRgjE7BXuxnjaQPlJOWc0XoprctYhDkubpljqggELJFysvPx9DaOeg2PxyzvkgX2noVBhKaRDL8cgbOPsXngB7Yhpadq9VLMm4SNCB3GL3MD8RLzqFk0BbKLv7QqbkDJqfY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/highest_month",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"highest_month"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
